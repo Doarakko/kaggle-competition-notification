@@ -1,7 +1,7 @@
 {
     "name": "Kaggle Competition Notification",
     "description": "Notify new competition to Slack or LINE",
-    "repository": "https://github.com/Doarakko/kaggle-kernel-notification",
+    "repository": "https://github.com/Doarakko/kaggle-competition-notification",
     "logo": "https://avatars0.githubusercontent.com/u/1336944",
     "keywords": [
         "kaggle",
