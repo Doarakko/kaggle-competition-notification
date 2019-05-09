@@ -1,0 +1,43 @@
+{
+    "name": "Kaggle Competition Notification",
+    "description": "Notify new competition to Slack or LINE",
+    "repository": "https://github.com/Doarakko/kaggle-kernel-notification",
+    "logo": "https://avatars0.githubusercontent.com/u/1336944",
+    "keywords": [
+        "kaggle",
+        "competition",
+        "notification",
+        "slack",
+        "line"
+    ],
+    "env": {
+        "SLACK_WEBHOOK_URL": {
+            "description": "You only need to enter slack or line.",
+            "value": "your webhook url"
+        },
+        "LINE_NOTIFY_TOKEN": {
+            "description": "You only need to enter slack or line.",
+            "value": "your line notify token"
+        },
+        "POST": {
+            "description": "slack or line",
+            "value": "slack"
+        },
+        "KAGGLE_KEY": {
+            "description": "kaggle key",
+            "value": "your key"
+        },
+        "KAGGLE_USERNAME": {
+            "description": "kaggle username",
+            "value": "your username"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-python"
+        }
+    ],
+    "addons": [
+        "scheduler:standard"
+    ]
+}
