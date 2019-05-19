@@ -52,6 +52,7 @@ class Competition:
         self.end_date = getattr(info, 'deadline')
         self.user_enter = getattr(info, 'userHasEntered')
 
+        # assume to run once a day
         now = datetime.datetime.utcnow()
         if self.start_date >= now - datetime.timedelta(days=ONE_DAY):
             self.notify_message = NEW_COMPETITION
