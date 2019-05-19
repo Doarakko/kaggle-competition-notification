@@ -1,6 +1,6 @@
 {
     "name": "Kaggle Competition Notification",
-    "description": "Notify new competition to Slack or LINE",
+    "description": "Notify new competition and remind one month, one week, three days, one day before the end of competition to Slack or LINE without coding.",
     "repository": "https://github.com/Doarakko/kaggle-competition-notification",
     "logo": "https://avatars0.githubusercontent.com/u/1336944",
     "keywords": [
