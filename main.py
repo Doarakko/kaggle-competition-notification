@@ -36,6 +36,7 @@ logger.addHandler(handler)
 logger.setLevel(DEBUG)
 
 
+# Plan to create reminder
 class Competition:
     def __init__(self, info):
         self.title = getattr(info, 'title')
@@ -44,9 +45,9 @@ class Competition:
         self.end_date = getattr(info, 'deadline')
         self.user_enter = getattr(info, 'userHasEntered')
 
-        # assume to run once a day
+        # assume to run once every 10 minutes
         now = datetime.datetime.utcnow()
-        if self.start_date >= now - datetime.timedelta(days=1):
+        if self.start_date >= now - datetime.timedelta(minutes=10):
             self.notify_message = NEW_COMPETITION
         else:
             self.notify_message = DO_NOT_NOTIFY

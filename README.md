@@ -20,14 +20,14 @@ Standard plan is free, so please don't worry.
 ### 2. Set task on Heroku
 ![](img/select-scheduler.png)
 
-Set `FREQUENCY` with `Daily`.
+Set `Schedule` with `Every 10 minutes`.
 
 ![](img/set-schedule.png)
 
-If you get at short intervals, please fork and correct the program.
 ```
+# assume to run once every 10 minutes
 now = datetime.datetime.utcnow()
-if self.start_date >= now - datetime.timedelta(days=ONE_DAY):
+if self.start_date >= now - datetime.timedelta(minutes=10):
     self.notify_message = NEW_COMPETITION
 else:
     self.notify_message = DO_NOT_NOTIFY
