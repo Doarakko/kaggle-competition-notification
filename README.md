@@ -1,7 +1,7 @@
 # Kaggle Competition Notification
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-Notify new competition to Slack or LINE without coding.
+Notify new [kaggle](https://kaggle.com) competition to Slack or LINE without coding.
 
 ## Requirements
 - Kaggle API
